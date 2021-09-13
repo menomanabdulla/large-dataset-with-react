@@ -1,9 +1,9 @@
 import React from 'react';
-import { InfiniteScrollAPI } from './components/Infinite-scroll/API'
+import { VirtualizeAPI } from './components/Virtualized/API'
 function App() {
   return (
     <div className="App">
-      <InfiniteScrollAPI />
+      <VirtualizeAPI />
     </div>
   );
 }
