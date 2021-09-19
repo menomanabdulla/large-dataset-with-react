@@ -7,6 +7,6 @@ export const WindowWrap = styled.div`
         padding: 20px;
     }
     .ListItemEven {
-        background-color: #f8f8f0;
+        background-color: #d3ffb1;
     }
 `

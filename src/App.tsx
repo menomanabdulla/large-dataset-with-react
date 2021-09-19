@@ -15,16 +15,18 @@ import {
   
   VirtualizeFaker,
   VirtualizeAPI,
-  
+
   WindowFaker,
   WindowAPI
 } from './Components'
+
+
 
 const App:React.FC = () => {
   return (
     <Router>
       <Navigation />
-     
+
       <Switch>
           <Route path="/" component={ PaginationFaker } exact={true} />
           <Route path="/pagination/api" component={ PaginationAPI } exact={true} />
