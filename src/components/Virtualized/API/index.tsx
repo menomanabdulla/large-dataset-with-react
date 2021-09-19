@@ -25,7 +25,6 @@ export const VirtualizeAPI:React.FC = () => {
     }, [])
 
     const renderRow = ({ index, style } : {index: number, style: any}) => {
-      console.log(data)
       return (
        <div key={index} style={style} className="post">
          <h3>{`${data[index].title}-${data[index].id}`}</h3>
