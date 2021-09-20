@@ -5,7 +5,7 @@ This project is about maintain large data-set at frontend specifically in react.
 - Pagination
 - Infinite-scroll
 - Virtualized
-- Windoing
+- Windwoing
 
 ### Project bullet points
 
@@ -14,10 +14,10 @@ This project is about maintain large data-set at frontend specifically in react.
 - Style with Styled-components
 - Using React-router
 
-### Data Generate from
+### Data generate from
 
-- Using Faker
-- [Json-placeholder](https://jsonplaceholder.typicode.com/)
+- [Faker](https://www.npmjs.com/package/faker)
+- [JSON-Placeholder](https://jsonplaceholder.typicode.com/)
 
 ### Folder structure
 
@@ -29,16 +29,13 @@ This project is about maintain large data-set at frontend specifically in react.
 
 Describes folders as follows:
 
-- **/Components/** Contains all of the methods I tried to handle large-scale data at fronend. Every methods contain two verion of it based access of data. Such as:
+- **/Components/** Contains all of the methods I tried to handle large-scale data at fronend. Every methods contain two version of it based accessibility of data. Such as:
 
-```
 - Faker version
 - API version
-
-```
 
 - **/Utlities/** Contain API-Contoller and Navigation component.
 
 ### Fatching data
 
-For fatching data I use [axios](https://www.npmjs.com/package/axios) with async await and useEffect hook.
+For data-fetching I use [axios](https://www.npmjs.com/package/axios) with async await and useEffect hook.
