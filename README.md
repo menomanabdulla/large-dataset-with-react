@@ -5,7 +5,7 @@ This project is about maintain large data-set at frontend specifically in react.
 - Pagination
 - Infinite-scroll
 - Virtualized
-- Windoing
+- Windwoing
 
 ### Project bullet points
 
@@ -14,7 +14,7 @@ This project is about maintain large data-set at frontend specifically in react.
 - Style with Styled-components
 - Using React-router
 
-### Data Generate from
+### Data generate from
 
 -  [Faker](https://www.npmjs.com/package/faker)
 - [JSON-Placeholder](https://jsonplaceholder.typicode.com/)
