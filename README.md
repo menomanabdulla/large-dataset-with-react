@@ -31,8 +31,8 @@ Describes folders as follows:
 
 - **/Components/** Contains all of the methods I tried to handle large-scale data at fronend. Every methods contain two version of it based accessibility of data. Such as:
 
-- Faker version
-- API version
+1. Faker version
+2. API version
 
 - **/Utlities/** Contain API-Contoller and Navigation component.
 
