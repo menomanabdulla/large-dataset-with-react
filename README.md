@@ -1,6 +1,6 @@
 # large-dataset-with-react
 
-This project is about maintain large data-set at frontend specifically in react. I use typescript too as i was practicing typescript. I applied four different way to maintain large-scale data-set at forntend.
+This project is about maintain large data-set at frontend specifically in react. I use typescript too as i was practicing typescript. I applied four different way to maintain large-scale data-set at frontend.
 
 - Pagination
 - Infinite-scroll
