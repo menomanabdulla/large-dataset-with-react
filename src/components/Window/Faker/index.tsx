@@ -27,7 +27,7 @@ export const WindowFaker:React.FC = () => {
   return (
     <WindowWrap>
          <List
-          width={900}
+          width={800}
           height={700}
           itemCount={data.length}
           itemSize={120}

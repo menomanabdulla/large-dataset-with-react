@@ -55,7 +55,4 @@ position: absolute;
             color: #68ab98;
         }
     }
-    .active{
-        color: #68ab98;
-    }
 `

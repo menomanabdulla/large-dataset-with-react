@@ -35,7 +35,7 @@ export const WindowAPI:React.FC = () => {
         {
           data && 
           <List
-            width={900}
+            width={800}
             height={700}
             itemCount={data.length}
             itemSize={120}

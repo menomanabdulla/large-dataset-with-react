@@ -17,14 +17,12 @@ export const VirtualizeFaker:React.FC = () => {
         body: faker.lorem.sentences(6)
     })))
 
-    const renderRow = ({ index, style } : {index: number, style: any}) => {
-      console.log(data[index])
-      return (
+    const renderRow = ({ index, style } : {index: number, style: any}) =>(
        <div key={index} style={style} className="post">
          <h3>{`${data[index].title}-${data[index].id}`}</h3>
          <p>{data[index].body}</p>
        </div>
-    )}
+    )
 
   return (
     <VirtualizedWrap>

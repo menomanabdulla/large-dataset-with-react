@@ -61,7 +61,7 @@ export const PaginationAPI:React.FC = () => {
     return (
         <PaginationWrap>
              {
-                pagination.currentData && pagination.currentData.map(((item, index) => (
+                pagination.currentData && pagination.currentData.map(((item) => (
                     <Item key={item.id} className="post">
                         <h3>{`${item.title} - ${item.id}`}</h3>
                         <p>{item.body}</p>

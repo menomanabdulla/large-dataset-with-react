@@ -40,7 +40,7 @@ export const InfiniteScrollAPI:React.FC = () => {
 
     useEffect(() => {
         fetchData()
-    }, [])
+    },[])
 
     return (
         <InfinityScrollWrap>

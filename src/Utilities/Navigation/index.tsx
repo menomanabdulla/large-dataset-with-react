@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavWrap, Nav, NavItem, DropDown } from './navigation.style'
-import { NavLink, Link } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 
 
 interface NavItemType {
@@ -28,7 +28,6 @@ const NavItemData: NavItemType[] = [
     }
 ]
 
-
 export const Navigation:React.FC = () => {
     return (
         <NavWrap>
@@ -39,13 +38,13 @@ export const Navigation:React.FC = () => {
                         <p>{item.title}</p>
                         <DropDown className="dropdown">
                             {item.methods.map((method,j) =>
-                                <Link 
+                                <NavLink  
                                     key={j}  
                                     to={(i === 0 &&  j === 0) ? "/" : 
                                     `/${item.title.toLowerCase()}/${method.toLowerCase()}`} 
                                 > 
-                                    {method.toUpperCase()}
-                                </Link>
+                                    {method.replace(/\b\w/g, c => c.toUpperCase())}
+                                </NavLink >
                             )}
                         </DropDown>
                     </NavItem>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation } from './Utilities/Navigation'
+import {  Navigation, RouteMessage } from './Utilities/'
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,7 +26,7 @@ const App:React.FC = () => {
   return (
     <Router>
       <Navigation />
-
+      <RouteMessage />
       <Switch>
           <Route path="/" component={ PaginationFaker } exact={true} />
           <Route path="/pagination/api" component={ PaginationAPI } exact={true} />
