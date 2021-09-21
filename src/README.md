@@ -1,6 +1,6 @@
 # large-dataset-with-react
 
-This project is about maintain large data-set at frontend specifically in react. I use typescript too as i was practicing typescript. I applied four different way to maintain large-scale data-set at forntend.
+This project is about maintain large data-set at frontend specifically in react. I use typescript too as i was practicing typescript. I applied four different way to maintain large-scale data-set at frontend.
 
 - Pagination
 - Infinite-scroll
@@ -16,7 +16,7 @@ This project is about maintain large data-set at frontend specifically in react.
 
 ### Data generate from
 
-- [Faker](https://www.npmjs.com/package/faker)
+-  [Faker](https://www.npmjs.com/package/faker)
 - [JSON-Placeholder](https://jsonplaceholder.typicode.com/)
 
 ### Folder structure
@@ -34,8 +34,16 @@ Describes folders as follows:
 1. Faker version
 2. API version
 
-- **/Utlities/** Contain API-Contoller and Navigation component.
+- **/Utlities/** Contain API-Contoller,  Navigation component, Route-message component.
 
-### Fatching data
+### Fatching data(API-Contoller)
 
-For data-fetching I use [axios](https://www.npmjs.com/package/axios) with async await and useEffect hook.
+1. api client [axios](https://www.npmjs.com/package/axios)
+2. reactjs hooks
+3. for dealing with api response async-await funcation 
+
+### Navigation component
+Navigation component contain top-menu and navigation mechanism for navigate different route.
+
+### Route-message component
+Route-message component for better user-experience. Route-message component change dom-tree based on route-change with route-change message. 
