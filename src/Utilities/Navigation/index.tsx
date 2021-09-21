@@ -1,57 +1,56 @@
 import React from 'react';
 import { NavWrap, Nav, NavItem, DropDown } from './navigation.style'
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
+
+interface NavItemType {
+    title: string;
+    methods: string[]
+}
+
+
+const NavItemData: NavItemType[] = [
+    {
+        title: 'Pagination',
+        methods: ['faker', 'api']
+    },
+    {
+        title: 'Infinite-scroll',
+        methods: ['faker', 'api']
+    },
+    {
+        title: 'Virtualized',
+        methods: ['faker', 'api']
+    },
+    {
+        title: 'Window',
+        methods: ['faker', 'api']
+    }
+]
 
 
 export const Navigation:React.FC = () => {
     return (
         <NavWrap>
             <Nav>
-                <NavItem>
-                    <p>Pagination</p>
-                    <DropDown className="dropdown">
-                        <NavLink exact to="/">
-                            Faker
-                        </NavLink>
-                        <NavLink to="/pagination/api">
-                            API
-                        </NavLink>
-                    </DropDown>
-                </NavItem>
-                <NavItem>
-                    <p>Infinite-scroll</p>
-                    <DropDown className="dropdown">
-                        <NavLink to="/infinite-scroll/faker">
-                            Faker
-                        </NavLink>
-                        <NavLink  to="/infinite-scroll/api">
-                            API
-                        </NavLink>
-                    </DropDown>
-                </NavItem>
-                <NavItem>
-                    <p>Virtualized</p>
-                    <DropDown className="dropdown">
-                        <NavLink to="/virtualized/faker">
-                            Faker
-                        </NavLink>
-                        <NavLink to="/virtualized/api">
-                            API
-                        </NavLink>
-                    </DropDown>
-                </NavItem>
-                <NavItem>
-                    <p>Window</p>
-                    <DropDown className="dropdown">
-                        <NavLink to="/window/faker">
-                            Faker
-                        </NavLink>
-                        <NavLink to="/window/api">
-                            API
-                        </NavLink>
-                    </DropDown>
-                </NavItem>
+                 {
+                    NavItemData.map((item: NavItemType,i) => 
+                    <NavItem key={i}>
+                        <p>{item.title}</p>
+                        <DropDown className="dropdown">
+                            {item.methods.map((method,j) =>
+                                <Link 
+                                    key={j}  
+                                    to={(i === 0 &&  j === 0) ? "/" : 
+                                    `/${item.title.toLowerCase()}/${method.toLowerCase()}`} 
+                                > 
+                                    {method.toUpperCase()}
+                                </Link>
+                            )}
+                        </DropDown>
+                    </NavItem>
+                   )
+                } 
             </Nav>
         </NavWrap>
     )
