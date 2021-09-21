@@ -38,4 +38,6 @@ Describes folders as follows:
 
 ### Fatching data
 
-For data-fetching I use [axios](https://www.npmjs.com/package/axios) with async await and useEffect hook.
+1. api client [axios](https://www.npmjs.com/package/axios)
+2. reactjs hooks
+3. for dealing with api response async-await funcation 
